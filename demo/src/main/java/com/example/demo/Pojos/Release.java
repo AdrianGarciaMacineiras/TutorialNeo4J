@@ -15,8 +15,8 @@ public class Release {
     private String name;
     private Integer year;
 
-    @Relationship(type="APPEARS_ON", direction = Relationship.Direction.INCOMING)
-    private List<AppearsOnReverse> appearsOnReverses;
+    //@Relationship(type="APPEARS_ON", direction = Relationship.Direction.INCOMING)
+    //private List<AppearsOnReverse> appearsOnReverses;
 
     public Long getId() {
         return id;
@@ -38,11 +38,11 @@ public class Release {
         this.year = year;
     }
 
-    public List<AppearsOnReverse> getAppearsOnReverses() {
+    /*public List<AppearsOnReverse> getAppearsOnReverses() {
         return appearsOnReverses;
-    }
+    }*/
 
-    public void setAppearsOnReverses(List<AppearsOnReverse> appearsOnReverses) {
+    /*public void setAppearsOnReverses(List<AppearsOnReverse> appearsOnReverses) {
         this.appearsOnReverses = appearsOnReverses;
-    }
+    }*/
 }
